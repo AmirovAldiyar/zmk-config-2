@@ -49,7 +49,7 @@
  &kp DEL  &kp LALT &kp LCTRL &kp DEL  &kp DEL  &kp SPACE    &kp DEL  &kp RCTRL &kp RALT  &kp RGUI
              >;
  
-             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &tab_browser>;
+             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &kp DEL>;
          };
  
      };
