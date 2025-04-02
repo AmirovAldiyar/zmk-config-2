@@ -81,11 +81,11 @@
 
         BASE {
             bindings = <
-                &kp MINUS  &kp N1  &kp N2  &kp N3    &kp N4   &kp N5                            &kp N6    &kp N7    &kp N8     &kp N9   &kp N0    &kp EQUAL
-                &kp TILDE  &kp Q   &kp W   &kp E     &kp R    &kp T                             &kp Y     &kp U     &kp I      &kp O    &kp P     &kp BSLH
-                &kp GRAVE   &mt LGUI A  &mt LEFT_ALT S  &mt LSHFT D  &mt LCTRL F  &kp G          &kp H        &mt RCTRL J      &mt RSHFT K        &mt RALT L  &mt RGUI SEMI  &kp SQT
-                &kp LBKT   &kp Z   &kp X   &kp C     &kp V    &kp B    &kp C_MUTE    &kp END    &kp N     &kp M     &kp COMMA  &kp DOT  &kp FSLH  &kp RBKT
-                                 &tog 2  &kp HOME  &kp DEL  &kp TAB  &lt 1 SPACE    &lt 1 ENTER  &kp BSPC  &kp CAPS  &kp END    &tog 4
+&kp MINUS  &kp N1      &kp N2          &kp N3       &kp N4       &kp N5                               &kp N6    &kp N7       &kp N8       &kp N9      &kp N0         &kp EQUAL
+&kp TILDE  &kp Q       &kp W           &kp E        &kp R        &kp T                                &kp Y     &kp U        &kp I        &kp O       &kp P          &kp BSLH
+&kp GRAVE  &mt LGUI A  &mt LEFT_ALT S  &mt LSHFT D  &mt LCTRL F  &kp G                                &kp H     &mt RCTRL J  &mt RSHFT K  &mt RALT L  &mt RGUI SEMI  &kp SQT
+&kp LBKT   &kp Z       &kp X           &kp C        &kp V        &kp B    &kp C_MUTE     &kp END      &kp N     &kp M        &kp COMMA    &kp DOT     &kp FSLH       &kp RBKT
+                       &tog 2          &kp HOME     &kp DEL      &kp TAB  &lt 1 SPACE    &lt 1 ENTER  &kp BSPC  &kp CAPS     &kp END      &tog 3
             >;
 
             sensor-bindings =
@@ -95,16 +95,16 @@
 
         NAV {
             bindings = <
-&none   &mt F11 F1  &mt F12 F2  &mt F13 F3  &mt F14 F4  &mt F15 F5    &mt F16 F6  &mt F17 F7      &mt F18 F8  &mt F19 F9   &mt F20 F10  &none
-&none  &none   &none     &kp UP    &none      &none                         &none   &none     &kp UP    &none      &none    &none
-&none  &none   &kp LEFT  &kp DOWN  &kp RIGHT  &none                         &none   &mt LCTRL LEFT  &mt LSHFT DOWN_ARROW  &mt RALT RIGHT  &none    &none
-&none  &none   &none     &none     &none      &none   &kp C_PP    &kp HOME  &none   &none     &none     &none      &none    &none
-               &none     &none     &none      &none   &none       &none     &none   &none     &none     &tnone
+&none  &mt F11 F1  &mt F12 F2  &mt F13 F3  &mt F14 F4  &mt F15 F5                        &mt F16 F6  &mt F17 F7      &mt F18 F8            &mt F19 F9      &mt F20 F10  &none
+&none  &none       &none       &kp UP      &none       &none                             &none       &none           &kp UP                &none           &none        &none
+&none  &none       &kp LEFT    &kp DOWN    &kp RIGHT   &none                             &none       &mt LCTRL LEFT  &mt LSHFT DOWN_ARROW  &mt RALT RIGHT  &none        &none
+&none  &none       &none       &none       &none       &none       &kp C_PP    &kp HOME  &none       &none           &none                 &none           &none        &none
+                   &none       &none       &none       &none       &none       &none     &none       &none           &none                 &none
             >;
 
             sensor-bindings =
                 <&inc_dec_kp C_NEXT C_PREV>,
-                <&inc_dec_kp PG_UP PG_DNdddd>;
+                <&inc_dec_kp PG_UP PG_DN>;
         };
 
         ADJ {
@@ -119,12 +119,14 @@
 
         GAME {
             bindings = <
-            &none   &kp N1  &kp N2  &kp N3    &kp N4   &kp N5        &kp N6    &kp N7    &kp N8     &kp N9   &kp N0   &none
-            &none   &kp TAB    &kp Q  &kp W   &kp E     &kp R        &kp C_VOL_UP  &kp Q     &kp UP    &kp E      &kp ESC &none
-            &kp M   &kp LSHFT  &kp A  &kp S   &kp D     &kp F        &kp C_VOL_DN  &kp LEFT  &kp DOWN  &kp RIGHT  &none &none
-            &kp G   &kp LCTRL  &kp Z  &kp X   &kp C     &kp V        &kp N1        &kp N2    &kp F2    &kp F5     &kp F6   &none
-            &none &none &trans  &kp LALT  &kp SPACE    &kp ENTER     &tog 4    &trans &none &none
+&none  &kp N1     &kp N2  &kp N3  &kp N4  &kp N5                                   &kp N6        &kp N7    &kp N8    &kp N9     &kp N0   &none
+&none  &kp TAB    &kp Q   &kp W   &kp E   &kp R                                    &kp C_VOL_UP  &kp Q     &kp UP    &kp E      &kp ESC  &none
+&kp M  &kp LSHFT  &kp A   &kp S   &kp D   &kp F                                    &kp C_VOL_DN  &kp LEFT  &kp DOWN  &kp RIGHT  &none    &none
+&kp G  &kp LCTRL  &kp Z   &kp X   &kp C   &kp V     &kp C_MUTE    &rgb_ug RGB_TOG  &kp F1        &kp F2    &kp F3    &kp F4     &kp F5   &kp F6
+                  &trans  &none   &none   &kp LALT  &kp SPACE     &kp ENTER        &tog 3        &none
             >;
+
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
     };
 };
