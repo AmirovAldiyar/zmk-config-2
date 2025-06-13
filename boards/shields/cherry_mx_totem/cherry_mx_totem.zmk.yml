@@ -1,0 +1,12 @@
+file_format: "1"
+id: cherry_mx_totem
+name: cherry_mx_totem
+type: shield
+url: https://github.com/Fliegende-Rehe/zmk-config/tree/cherry-mx-totem
+requires: [pro_micro]
+exposes: [i2c_oled]
+features:
+  - keys
+siblings:
+  - cherry_mx_totem_left
+  - cherry_mx_totem_right

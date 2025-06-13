@@ -1,6 +1,6 @@
-#include "cygnus.dtsi"
+#include "cherry_mx_totem.dtsi"
 
-&default_transform { // The matrix transform for this board is 6 columns over because the left half is 6 columns wide according to the matrix.
+&default_transform { 
     col-offset = <7>;
 };
 

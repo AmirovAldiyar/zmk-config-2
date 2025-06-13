@@ -1,0 +1,5 @@
+config SHIELD_CHERRY_MX_TOTEM_LEFT
+    def_bool $(shields_list_contains,cherry_mx_totem_left)
+
+config SHIELD_CHERRY_MX_TOTEM_RIGHT
+    def_bool $(shields_list_contains,cherry_mx_totem_right)
