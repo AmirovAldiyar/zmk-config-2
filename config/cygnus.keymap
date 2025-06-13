@@ -32,12 +32,12 @@
 
         esc_right {
             bindings = <&kp ESC>;
-            key-positions = <17 18 16>;
+            key-positions = <17 18 19>;
         };
 
         esc_left {
             bindings = <&kp ESC>;
-            key-positions = <11 12 13>;
+            key-positions = <12 13 14>;
         };
     };
 
