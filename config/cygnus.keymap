@@ -27,6 +27,11 @@
             bindings = <&mo 3>;
             key-positions = <31 32 33 34>;
         };
+
+        macLang {
+            bindings = <&kp LC(SPACE)>;
+            key-positions = <25 26 27 28>;
+        };
     };
 
     keymap {
